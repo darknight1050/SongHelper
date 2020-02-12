@@ -1,0 +1,26 @@
+{
+    "id": "SongHelper",
+    "name": "SongHelper",
+    "author": "darknight1050",
+    "description": [
+        "SongHelper"
+    ],
+    "category": "Other",
+    "gameVersion": "1.7.0",
+    "version": "0.1.0",
+	"links": {
+		"project-home": "https://github.com/darknight1050/SongHelper"
+	},
+    "platform": "Quest",
+    "components": [
+        {
+            "type": "HookMod",
+            "installAction": {
+                "installLibraryFile": "libsonghelper.so"
+            },
+            "uninstallAction": {
+                "removeLibraryFile": "libsonghelper.so"
+            }
+        }
+    ]
+}
