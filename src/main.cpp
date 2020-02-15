@@ -34,7 +34,7 @@ MAKE_HOOK_OFFSETLESS(VRPlatformHelper_Update, void, Il2CppObject* self)
 {
     VRPlatformHelper_Update(self);
     if(isInMenu){
-        long long currentTime = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count();;
+        long long currentTime = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();;
         float thumbstickVertical = 0.0f;
         const MethodInfo* getAxisMethod = il2cpp_utils::FindMethod("UnityEngine", "Input", "GetAxis", 1);
         il2cpp_utils::RunMethod(&thumbstickVertical, nullptr, getAxisMethod, il2cpp_utils::createcsstr("VerticalRightHand"));
