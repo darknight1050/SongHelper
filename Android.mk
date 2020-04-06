@@ -14,8 +14,7 @@
 
 
 LOCAL_PATH := $(call my-dir)
-
-TARGET_ARCH_ABI := arm64-v8a
+TARGET_ARCH_ABI := $(APP_ABI)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := hook
@@ -24,9 +23,8 @@ rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
 include $(CLEAR_VARS)
 LOCAL_LDLIBS     := -llog
-LOCAL_CFLAGS     := -D"MOD_ID=\"SongHelper\"" -D"VERSION=\"0.1.1\"" -I"c:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/il2cpp/libil2cpp"
+LOCAL_CFLAGS     := -DMOD_ID='"SongHelper"' -DVERSION='"0.1.1"' -I"C:/Program Files/Unity/Hub/Editor/2019.3.1f1/Editor/Data/il2cpp/libil2cpp"
 LOCAL_MODULE     := songhelper
-LOCAL_CPPFLAGS   := -std=c++2a
 LOCAL_C_INCLUDES := ./include ./src
 LOCAL_SRC_FILES  := $(call rwildcard,extern/beatsaber-hook/shared/inline-hook/,*.cpp) $(call rwildcard,extern/beatsaber-hook/shared/utils/,*.cpp) $(call rwildcard,extern/beatsaber-hook/shared/inline-hook/,*.c)
 # In order to add configuration support to your project, uncomment the following line:
