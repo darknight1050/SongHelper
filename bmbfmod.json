@@ -6,8 +6,8 @@
         "SongHelper"
     ],
     "category": "Other",
-    "gameVersion": "1.8.0",
-    "version": "0.1.1",
+    "gameVersion": "1.11.1",
+    "version": "0.1.2",
 	"links": {
 		"project-home": "https://github.com/darknight1050/SongHelper"
 	},
@@ -20,6 +20,12 @@
             },
             "uninstallAction": {
                 "removeLibraryFile": "libsonghelper.so"
+            }
+        },
+        {
+            "type": "HookModLibrary",
+            "installAction": {
+              "installLibraryFile": "libbeatsaber-hook_0_6_0.so"
             }
         }
     ]

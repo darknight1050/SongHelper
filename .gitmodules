@@ -1,4 +1,0 @@
-[submodule "beatsaber-hook"]
-	path = extern/beatsaber-hook
-	url = https://github.com/darknight1050/beatsaber-hook.git
-	branch = modSettings

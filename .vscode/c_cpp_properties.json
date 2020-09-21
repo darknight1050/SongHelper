@@ -4,14 +4,14 @@
             "name": "Quest",
             "defines": [
                 "MOD_ID=\"SongHelper\"",
-                "VERSION=\"0.1.0\"",
+                "VERSION=\"0.1.2\"",
                 "__GNUC__",
                 "__aarch64__"
             ],
             "includePath": [
                 "${workspaceFolder}/**",
-                "c:/Program Files/Unity/Hub/Editor/2018.4.11f1/Editor/Data/il2cpp/libil2cpp",
-                "c:/Development/Tools/android-ndk-r20/**"
+                "${workspaceFolder}/extern/**",
+                "C:/Development/Tools/android-ndk-r21d/**"
             ],
             "cStandard": "c11",
             "cppStandard": "c++20",
