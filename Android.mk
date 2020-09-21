@@ -46,6 +46,6 @@ LOCAL_SRC_FILES += $(call rwildcard,extern/beatsaber-hook/src/inline-hook,*.c)
 LOCAL_SHARED_LIBRARIES += modloader 
 LOCAL_SHARED_LIBRARIES += beatsaber-hook 
 LOCAL_LDLIBS += -llog 
-LOCAL_CFLAGS += -isystem"./extern/libil2cpp/il2cpp/libil2cpp" -isystem 'extern' -DID='"SongHelper"' -DVERSION='"0.1.2"' -I'./shared' -I'./extern' -Wno-inaccessible-base 
+LOCAL_CFLAGS += -isystem"./extern/libil2cpp/il2cpp/libil2cpp" -isystem 'extern' -I'./shared' -I'./extern' -Wno-inaccessible-base 
 LOCAL_C_INCLUDES += ./include ./src 
 include $(BUILD_SHARED_LIBRARY)
