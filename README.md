@@ -1,4 +1,5 @@
 # SongHelper
+Allows you to scroll in the songlist with your thumbsticks!
 
 ## Credits
 

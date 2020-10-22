@@ -69,7 +69,7 @@ MAKE_HOOK_OFFSETLESS(VRPlatformHelper_Update, void, Il2CppObject* self) {
 extern "C" void setup(ModInfo& info) 
 {
     modInfo.id = "SongHelper";
-    modInfo.version = "0.1.2";
+    modInfo.version = VERSION;
     info = modInfo;
 }
 
